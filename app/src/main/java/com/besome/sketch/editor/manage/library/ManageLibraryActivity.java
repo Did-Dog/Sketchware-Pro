@@ -171,10 +171,12 @@ public class ManageLibraryActivity extends BaseSessionAppCompatActivity implemen
                     ProjectLibraryBean libraryBean = (ProjectLibraryBean) data.getParcelableExtra("firebase");
                     initializeLibrary(libraryBean);
                     if (libraryBean.useYn.equals("Y") && !compatLibraryBean.useYn.equals("Y")) {
-                        libraryBean = compatLibraryBean;
+ /**
+                     libraryBean = compatLibraryBean;
                         libraryBean.useYn = "N";
                         initializeLibrary(libraryBean);
-                        //showFirebaseNeedComaptDialog();
+                        showFirebaseNeedComaptDialog();
+**/
                     }
                     break;
 
